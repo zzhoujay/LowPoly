@@ -3,11 +3,20 @@ version '1.0'
 
 apply plugin: 'java'
 
+archivesBaseName="LowPoly"
 
-sourceCompatibility = 1.5
+
+sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+}
+
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.zzhoujay.lowpoly.Simple'
+    }
 }
 
 dependencies {

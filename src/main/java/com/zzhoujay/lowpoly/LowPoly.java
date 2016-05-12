@@ -17,7 +17,7 @@ import java.util.List;
 public final class LowPoly {
 
     public static void generate(InputStream inputStream, OutputStream outputStream) throws IOException {
-        generate(inputStream, outputStream, 50, 1, true, "png", false);
+        generate(inputStream, outputStream, 50, 1, true, "png", false, 300);
     }
 
     /**
@@ -30,9 +30,10 @@ public final class LowPoly {
      * @param fill         是否填充颜色，为false时只绘制线条
      * @param format       输出图片格式
      * @param antiAliasing 是否抗锯齿
+     * @param pointCount   随机点的数量
      * @throws IOException
      */
-    public static void generate(InputStream inputStream, OutputStream outputStream, int accuracy, float scale, boolean fill, String format, boolean antiAliasing) throws IOException {
+    public static void generate(InputStream inputStream, OutputStream outputStream, int accuracy, float scale, boolean fill, String format, boolean antiAliasing, int pointCount) throws IOException {
         if (inputStream == null || outputStream == null) {
             return;
         }
@@ -50,7 +51,7 @@ public final class LowPoly {
             }
         });
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < pointCount; i++) {
             particles.add(new int[]{(int) (Math.random() * width), (int) (Math.random() * height)});
         }
 
