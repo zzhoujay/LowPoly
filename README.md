@@ -13,12 +13,25 @@ LowPoly.generate(inputStream,outputStream);
 ```
 或者
 ```
+/**
+ * 生成low poly风格的图片
+ *
+ * @param inputStream  源图片
+ * @param outputStream 输出图片流
+ * @param accuracy     精度值，越小精度越高
+ * @param scale        缩放，源图片和目标图片的尺寸比例
+ * @param fill         是否填充颜色，为false时只绘制线条
+ * @param format       输出图片格式
+ * @param antiAliasing 是否抗锯齿
+ * @param pointCount   随机点的数量
+ * @throws IOException
+ */
 LowPoly.generate(inputStream, outputStream, accuracy, scale, fill,format, antiAliasing, pointCount);
 ```
 
 ### jar包使用方法
 
-[下载](lib/LowPoly-1.0.jar)
+[下载](lib/LowPoly-1.1.jar)
 
 ```
 java -jar LowPoly-1.0.jar input_filename output_filename
