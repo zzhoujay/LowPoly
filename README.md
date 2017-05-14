@@ -31,7 +31,7 @@ LowPoly.generate(inputStream, outputStream, accuracy, scale, fill,format, antiAl
 
 ### jar包使用方法
 
-[下载](lib/LowPoly-1.1.jar)
+[下载](https://github.com/zzhoujay/LowPoly/releases/download/1.1/LowPoly-1.1.jar)
 
 ```
 java -jar LowPoly-1.0.jar input_filename output_filename
@@ -39,8 +39,15 @@ java -jar LowPoly-1.0.jar input_filename output_filename
 
 或者
 
+生成配置文件：
+
 ```
-java -jar LowPoly-1.0.jar input_filename output_filename accuracy scale fill format antiAliasing pointCount
+java -jar LowPoly-1.1.jar configuration.properties
+```
+然后
+
+```
+java -jar LowPoly-1.0.jar input_filename output_filename configuration.properties
 ```
 
 ### 原理介绍
