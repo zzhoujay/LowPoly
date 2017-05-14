@@ -16,8 +16,8 @@ import java.util.List;
  */
 public final class LowPoly {
 
-    public static void generate(InputStream inputStream, OutputStream outputStream) throws IOException {
-        generate(inputStream, outputStream, 50, 1, true, "png", false, 300);
+    public static void generate(InputStream inputStream, OutputStream outputStream, Configuration configuration) throws IOException {
+        generate(inputStream, outputStream, configuration.accuracy, configuration.scale, configuration.fill, configuration.format, configuration.antiAliasing, configuration.pointCount);
     }
 
     /**

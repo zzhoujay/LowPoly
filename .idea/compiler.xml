@@ -18,5 +18,11 @@
         <processorPath useClasspath="true" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="LowPoly_main" target="1.8" />
+      <module name="Lowpoly_main" target="1.8" />
+      <module name="Lowpoly_test" target="1.8" />
+      <module name="LowPoly_test" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

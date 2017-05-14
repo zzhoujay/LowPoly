@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/LowPoly.iml" filepath="$PROJECT_DIR$/LowPoly.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Lowpoly.iml" filepath="$PROJECT_DIR$/.idea/modules/Lowpoly.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Lowpoly_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Lowpoly_main.iml" group="Lowpoly" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Lowpoly_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Lowpoly_test.iml" group="Lowpoly" />
     </modules>
   </component>
 </project>
